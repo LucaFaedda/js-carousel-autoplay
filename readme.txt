@@ -9,4 +9,7 @@ Bonus (da fare solo se avete terminato la parte obbligatoria):
 Implementate i pulsanti per attivare e disattivare l'autoplay
 
 
-1. 
+1. creo una funzione che mi aggiunga la classe active, e che la toglie all'elemento
+1.2 dentro metto un if 
+2. Creo un setTime con dentro la funzione creata, e do un determinato tempo
+

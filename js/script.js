@@ -38,7 +38,7 @@ circles[itemActive].classList.add('active');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
-next.addEventListener('click', function(){
+/*next.addEventListener('click', function(){
     //verifico l'elemento attivo (itemActive)
     //incremento il suo valore di 1
     //aggiungere la class active al nuovo elemento dell'array items e la vado a rimuovere da quello precedente
@@ -73,10 +73,10 @@ next.addEventListener('click', function(){
     lastCircleActive.classList.remove('active')
 
 
-})
+})*/
 
 
-prev.addEventListener('click', function(){
+/*prev.addEventListener('click', function(){
     //verifico l'elemento attivo (itemActive)
     //decremento il suo valore di 1
     //aggiungere la class active al nuovo elemento dell'array items e la vado a rimuovere da quello precedente
@@ -105,6 +105,6 @@ prev.addEventListener('click', function(){
     CircleActive.classList.add('active')
     lastCircleActive.classList.remove('active')
 
-})
+})*/
 
 
