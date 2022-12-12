@@ -108,3 +108,22 @@ const next = document.querySelector('.next');
 })*/
 
 
+
+
+setInterval(function(){
+    const lastActiveItem = items[itemActive]
+    
+    if(itemActive == (items.length - 1)){
+        itemActive = 0
+    }
+    else{
+        itemActive = itemActive + 1
+    }
+    
+    const ActiveItem = items[itemActive]
+    
+    ActiveItem.classList.add('active')
+    lastActiveItem.classList.remove('active')
+    return itemActive
+
+},3000)
