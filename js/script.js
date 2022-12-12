@@ -109,9 +109,9 @@ const next = document.querySelector('.next');
 
 
 
-
 setInterval(function(){
     const lastActiveItem = items[itemActive]
+    const lastCircleActive = circles[itemActive]
     
     if(itemActive == (items.length - 1)){
         itemActive = 0
@@ -121,9 +121,12 @@ setInterval(function(){
     }
     
     const ActiveItem = items[itemActive]
+    const CircleActive = circles[itemActive]
     
     ActiveItem.classList.add('active')
     lastActiveItem.classList.remove('active')
-    return itemActive
+    CircleActive.classList.add('active')
+    lastCircleActive.classList.remove('active')
 
-},3000)
+
+}, 3000)
