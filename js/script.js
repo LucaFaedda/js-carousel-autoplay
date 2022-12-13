@@ -109,7 +109,7 @@ const next = document.querySelector('.next');
 
 
 
-setInterval(function(){
+function autoplay(){
     const lastActiveItem = items[itemActive]
     const lastCircleActive = circles[itemActive]
     
@@ -127,6 +127,24 @@ setInterval(function(){
     lastActiveItem.classList.remove('active')
     CircleActive.classList.add('active')
     lastCircleActive.classList.remove('active')
+}
+
+let myInterval = setInterval(autoplay,1000)
+
+document.getElementById('play').addEventListener('click',function(){
+
+   myInterval = setInterval(autoplay,1000)
+    
+})
+
+document.getElementById('stop').addEventListener('click',function(){
+
+    clearInterval(myInterval)
+    
+})
 
 
-}, 3000)
+
+
+
+

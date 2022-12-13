@@ -4,11 +4,34 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(8, 8, 95);
+}
+
 .container{
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.pulsanti{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 3rem 0;
+}
+
+#stop{
+    margin: 0 2rem;
+}
+
+.botton{
+    padding: 10px 20px;
+    border:1px solid ;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .slider{
