@@ -133,6 +133,7 @@ let myInterval = setInterval(autoplay,1000)
 
 document.getElementById('play').addEventListener('click',function(){
 
+   clearInterval(myInterval)
    myInterval = setInterval(autoplay,1000)
     
 })
